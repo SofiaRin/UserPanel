@@ -1,0 +1,50 @@
+{
+	"groups": [
+		{
+			"keys": "bg_jpg,egret_icon_png,description_json,S_SKC34_png,S_Watcher_png,S_Setuper_png,S_Prinz Eugen_jpg,S_FuMO25_png",
+			"name": "preload"
+		}
+	],
+	"resources": [
+		{
+			"url": "assets/bg.jpg",
+			"type": "image",
+			"name": "bg_jpg"
+		},
+		{
+			"url": "assets/egret_icon.png",
+			"type": "image",
+			"name": "egret_icon_png"
+		},
+		{
+			"url": "config/description.json",
+			"type": "json",
+			"name": "description_json"
+		},
+		{
+			"url": "assets/S_SKC34.png",
+			"type": "image",
+			"name": "S_SKC34_png"
+		},
+		{
+			"url": "assets/S_Watcher.png",
+			"type": "image",
+			"name": "S_Watcher_png"
+		},
+		{
+			"url": "assets/S_Setuper.png",
+			"type": "image",
+			"name": "S_Setuper_png"
+		},
+		{
+			"url": "assets/S_Prinz Eugen.jpg",
+			"type": "image",
+			"name": "S_Prinz Eugen_jpg"
+		},
+		{
+			"url": "assets/S_FuMO25.png",
+			"type": "image",
+			"name": "S_FuMO25_png"
+		}
+	]
+}
