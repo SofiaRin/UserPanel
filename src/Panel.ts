@@ -65,8 +65,6 @@ class ShowPanel extends egret.DisplayObjectContainer {
         if (_isAll) {
 
             _container.y = this.role.height + this.equipmentInfo.height;
-
-
         } else {
             _container.x = this.role.width;
             _container.y = this.role.height + this.equipmentInfo.height;
@@ -93,7 +91,6 @@ class ShowPanel extends egret.DisplayObjectContainer {
                 this.addChild(container);
                 this.posConfirm(false, container);
                 break;
-
             //case 3:
             //case 4:
         }
@@ -104,7 +101,7 @@ class ShowPanel extends egret.DisplayObjectContainer {
         Bitmap.touchEnabled = true;
 
         Bitmap.addEventListener(egret.TouchEvent.TOUCH_TAP, () => {
-
+            
             this.updateEquimentInfo(1, _equip)
             console.log("Tap Equipment_1");
         }, this);

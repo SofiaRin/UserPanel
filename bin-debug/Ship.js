@@ -38,14 +38,18 @@ var Ship = (function () {
         return this.getmaxHP() * 1.5 + this.getAttack() * 1.8 + Properties.getInstance().shipProperty[ShipPropertyName.ship_Speed].value * 1.2;
     };
     p.disPlayDetail = function () {
+        ShowPanel.all.size = 25;
         ShowPanel.all.text = "";
         ShowPanel.all.text =
             "Attack: + " + this.getAttack().toString() + "\n"
                 + "FightPower: + " + Math.floor(this.calFightPower()).toString() + "\n"
                 + "MaxHP: + " + this.getmaxHP().toString() + "\n";
-        var container = new egret.DisplayObjectContainer();
-        container.addChild(ShowPanel.all);
-        return container;
+        return PropertiesDisplayFactory.createAllDescription(Properties.getInstance().shipProperty, ShowPanel.all);
+        /*
+    var container = new egret.DisplayObjectContainer();
+    container.addChild(ShowPanel.all);
+    return container;
+    */
     };
     __decorate([
         Cache

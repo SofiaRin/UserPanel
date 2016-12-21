@@ -57,14 +57,19 @@ class Ship {
     }
 
     public disPlayDetail() {
+        ShowPanel.all.size = 25;
         ShowPanel.all.text = "";
         ShowPanel.all.text =
             "Attack: + " + this.getAttack().toString() + "\n"
             + "FightPower: + " + Math.floor(this.calFightPower()).toString() + "\n"
-            + "MaxHP: + " + this.getmaxHP().toString() + "\n"
+            + "MaxHP: + " + this.getmaxHP().toString() + "\n";
+
+            return PropertiesDisplayFactory.createAllDescription(Properties.getInstance().shipProperty, ShowPanel.all)
+            /*
         var container = new egret.DisplayObjectContainer();
         container.addChild(ShowPanel.all);
         return container;
+        */
     }
 }
 
